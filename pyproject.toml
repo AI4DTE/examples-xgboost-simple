@@ -1,0 +1,10 @@
+[project]
+name = "examples-xgboost-simple"
+dynamic = ["version"]
+
+dependencies = [
+    "mlflow[extras]",
+    "scikit-learn",
+    "xgboost"
+]
+
