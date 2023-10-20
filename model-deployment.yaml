@@ -4,4 +4,4 @@ id: example-xgboost-simple
 model-serving:
   expose:
     # Exposes model with this experiment and run ID
-    "1.0.0": mlflow-artifacts:/1/9eb83dce07ed4960a914d62cd6a9dfef/artifacts/model
+    "1.0.0": mlflow-artifacts:/1/192f366adc0245519f333f963a7550e8/artifacts/model
