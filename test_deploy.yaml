@@ -4,8 +4,8 @@ id: test-model-xgboost
 model-serving:
   #model-server-image: seldonio/mlserver:1.4.0.rc5-mlflow
   # This is compatible with python 3.7, with which the model was trained
-  # model-server-image: seldonio/mlserver:1.1.0-mlflow
-  #mlserver-mlflow-version: 1.1.0
+  model-server-image: seldonio/mlserver:1.1.0-mlflow
+  mlserver-mlflow-version: 1.1.0
 
   artifacts:
     source: s3-mlflow
@@ -15,7 +15,7 @@ model-serving:
       
   expose:
     # Exposes model with this experiment and run ID
-    "1.0.5": 1/ae7f476212ab4163b32c684ba9afbbe7
+    "1.0.6": 1/ae7f476212ab4163b32c684ba9afbbe7
 
 experiment-tracking:
   type: none
