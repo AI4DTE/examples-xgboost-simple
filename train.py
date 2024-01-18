@@ -59,6 +59,9 @@ with mlflow.start_run():
 
     # This records two metrics to MLflow, which will appear in the UI.
     mlflow.log_metrics({"log_loss": loss, "accuracy": acc})
-    
-    mlflow.xgboost.log_model(model, 'models')
+
+    from mlflow.models.signature import infer_signature    
+    model_signature=infer_signature(X_train, y_train)
+
+    mlflow.xgboost.log_model(model, 'models', signature=model_signature)
 
