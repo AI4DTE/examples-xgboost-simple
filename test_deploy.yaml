@@ -15,7 +15,7 @@ model-serving:
       
   expose:
     # Exposes model with this experiment and run ID
-    "1.0.4": 1/06ded1fc507f4230a922f2e70af1efee/artifacts/model/
+    "1.0.5": 1/ae7f476212ab4163b32c684ba9afbbe7
 
 experiment-tracking:
   type: none
